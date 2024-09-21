@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adicionado para garantir que bordas e padding sejam contados no tamanho total */
+}
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    color: #fff;
+}
+
+header .content_header {
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    max-width: 100%; /* Garante que o header nunca transborde */
+}
+
+header .content_header h1 {
+    font-size: 34px;
+}
+
+header .content_header nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+header .content_header nav ul li {
+    font-size: 18px;
+    cursor: pointer;
+    list-style: none;
+    transition: .2s;
+}
+
+header .content_header nav ul li:hover {
+    border-bottom: 2px solid #fff;
+}
+
+.info_sobrenatural {
+    position: relative;
+    width: 100%;
+    max-width: 100vw; /* Limita a largura total à viewport */
+}
+
+.info_sobrenatural::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, black 0%, rgba(0, 0, 0, 0.5) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 80%, black 100%);
+    z-index: 1;
+}
+
+.img_sobrenatural {
+    width: 100%;
+    object-fit: cover;
+}
+
+.info_serie {
+    position: absolute;
+    top: 0%; 
+    left: 0%;  
+    margin: 200px 40px;
+    color: #fff;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    z-index: 2;
+}
+
+.info_serie .nome_serie {
+    font-family: 'Grenze Gotisch', sans-serif;
+    font-size: 92px;
+}
+
+.info_serie .descricao_serie {
+    font-size: 20px;
+}
+
+.temp_form {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os elementos se ajustem quando necessário */
+    margin: 100px 40px;
+    max-width: 100%; /* Limita a largura total */
+}
+
+.temp_form .section_form {
+    width: 70%;
+    padding-right: 20px; /* Garante espaçamento sem ultrapassar 100% */
+}
+
+.temp_form .section_form h2 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.temp_form .section_form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.temp_form .section_form form input {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #242424;
+    width: 50%; /* Garante que o input ocupe toda a largura */
+}
+
+input:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(131, 129, 129, 0.7);
+}
+
+.temp_form .section_form .pers_favorito {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.temp_form .section_form .pers_favorito h3 {
+    margin: 10px 0;
+}
+
+.temp_form .section_form .pers_favorito .radio_group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.temp_form .section_form button {
+    background-color: #242424;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    width: 50%;
+    cursor: pointer;
+}
+
+.temp_form .section_form form button:hover {
+    box-shadow: 0px 0px 2px 2px rgba(131, 129, 129, 0.7);
+}
+
+.temp_form .aside_temporadas {
+    width: 30%; /* Mantém os 30%, mas verifiquei para evitar transbordo */
+    padding-left: 20px;
+}
+
+.temp_form .aside_temporadas h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.temp_form .aside_temporadas ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+.temp_form .aside_temporadas ul a button {
+    width: 150px; /* Botões ocupam toda a largura do contêiner */
+    padding: 15px;
+    background-color: #242424;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.temp_form .aside_temporadas ul a button:hover {
+    box-shadow: 0px 0px 2px 2px rgba(131, 129, 129, 0.7);
+}
