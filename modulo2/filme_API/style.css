@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1.title {
+    background-color: lightcoral;
+    color: #fff;
+    padding: 10px;
+}
+
+form {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid lightcoral;
+    border-radius: 5px;
+    display: flex;
+}
+
+form input {
+    padding: 5px;
+    border: none;
+    outline: none;
+    flex: 1;
+}
+
+form button {
+    padding: 8px 10px;
+    background-color: lightcoral;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+div.lista {
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    width: 100%;
+}
+
+div.item {
+    text-align: center;
+    padding: 10px;
+    border: 2px solid lightcoral;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+div.item:hover {
+    background-color: lightcoral;
+}
+
+div.item img {
+    
+}
+

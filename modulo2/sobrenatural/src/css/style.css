@@ -3,14 +3,22 @@
     padding: 0;
     box-sizing: border-box; /* Adicionado para garantir que bordas e padding sejam contados no tamanho total */
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
 body {
     background-color: #000;
-    color: #fff;
     font-family: 'Poppins', sans-serif;
+    color: #fff;
 }
 
 header {
     color: #fff;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
 }
 
 header .content_header {
@@ -18,17 +26,18 @@ header .content_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
     max-width: 100%; /* Garante que o header nunca transborde */
+    flex-wrap: wrap;
 }
 
-header .content_header h1 {
-    font-size: 34px;
+header .content_header img {
+    width: 250px;
 }
 
 header .content_header nav ul {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 header .content_header nav ul li {
@@ -36,6 +45,12 @@ header .content_header nav ul li {
     cursor: pointer;
     list-style: none;
     transition: .2s;
+    border-bottom: 2px solid transparent;
+}
+
+header .content_header nav ul li a {
+    text-decoration: none;
+    color: #fff;
 }
 
 header .content_header nav ul li:hover {
@@ -62,15 +77,16 @@ header .content_header nav ul li:hover {
 .img_sobrenatural {
     width: 100%;
     object-fit: cover;
+    position: relative;
+    top: 0;
 }
 
 .info_serie {
-    position: absolute;
     top: 0%; 
     left: 0%;  
-    margin: 200px 40px;
+    margin: 50px 40px;
     color: #fff;
-    width: 50%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px; 
@@ -86,11 +102,46 @@ header .content_header nav ul li:hover {
     font-size: 20px;
 }
 
+.personagens {
+    margin: 100px 40px;
+}
+
+.personagens h2 {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.personagens ul {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    justify-content: center;
+   
+}
+
+.personagens ul li {
+    color: #fff;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.personagens ul li img {
+    width: 200px;
+    border-radius: 50%;
+}
+
 .temp_form {
     display: flex;
     flex-wrap: wrap; /* Permite que os elementos se ajustem quando necessário */
     margin: 100px 40px;
     max-width: 100%; /* Limita a largura total */
+    flex-wrap: wrap;
 }
 
 .temp_form .section_form {
@@ -108,6 +159,7 @@ header .content_header nav ul li:hover {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: #fff;
 }
 
 .temp_form .section_form form input {
@@ -131,12 +183,15 @@ input:focus {
 
 .temp_form .section_form .pers_favorito h3 {
     margin: 10px 0;
+    color: #fff;
+    font-weight: 300;
 }
 
 .temp_form .section_form .pers_favorito .radio_group {
     display: flex;
     align-items: center;
     gap: 10px;
+    color: #fff;
 }
 
 .temp_form .section_form button {
@@ -169,18 +224,66 @@ input:focus {
     flex-wrap: wrap;
     gap: 20px;
     list-style: none;
+    padding: 0;
 }
 
-.temp_form .aside_temporadas ul a button {
-    width: 150px; /* Botões ocupam toda a largura do contêiner */
+.temp_form .aside_temporadas ul li {
+    flex-grow: 1; /* Faz com que os itens <li> cresçam igualmente */
+}
+
+.temp_form .aside_temporadas ul li a {
+    display: flex; /* Define o link como flexível */
+    width: 100%; /* Faz com que o link ocupe toda a largura disponível */
+    text-decoration: none;
+}
+
+.temp_form .aside_temporadas ul li a button {
+    flex-grow: 1; /* Faz com que o botão cresça dentro do link */
     padding: 15px;
     background-color: #242424;
     color: #fff;
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    width: 100%; /* Garante que o botão ocupe 100% da largura do link */
 }
 
-.temp_form .aside_temporadas ul a button:hover {
+.temp_form .aside_temporadas ul li a button:hover {
     box-shadow: 0px 0px 2px 2px rgba(131, 129, 129, 0.7);
+}
+
+
+footer .social ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+footer .social ul li {
+    list-style: none;
+}
+
+footer .social ul li a {
+    text-decoration: none;
+}
+
+footer .social ul li a i {
+    color: #242424;
+    font-size: 48px;
+}
+
+footer .social ul li a i:hover {
+    color: #fff;
+}
+
+footer .copy {
+    text-align: center;
+    
+}
+
+footer .copy p {
+    background-color: #242424;
+    color: #fff;
+    padding: 20px;
 }

@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+header h1 {
+    color: #6C63FF;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #6C63FF;
+}
+
+.registro {
+    padding: 100px;
+    background-color: #f8f9fa;
+}
+
+.registro h2 {
+    margin-bottom: 25px;
+    font-size: 30px;
+    color: #6C63FF;
+    text-align: center;
+}
+
+.registro form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Define 2 colunas com o mesmo tamanho */
+    gap: 20px; /* Espaçamento entre os elementos */
+    justify-items: center; /* Alinha horizontalmente os itens no centro */
+    align-items: center; /* Alinha verticalmente no centro */
+    width: 100%;
+}
+
+.registro form input,
+.registro form select {
+    padding: 10px;
+    border: none;
+    box-shadow: 0px 0px 2px #6C63FF;
+    width: 100%; 
+}
+
+.registro form input::placeholder {
+    color: #000;
+}
+
+.registro form button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #6C63FF;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+}
+
+.registro form button:hover {
+    background-color: #4A42D1;
+}
+
+.registro form button:active {
+    background-color: #3A34A1;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .registro form {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .registro form {
+        grid-template-columns: 1fr;
+    }
+}

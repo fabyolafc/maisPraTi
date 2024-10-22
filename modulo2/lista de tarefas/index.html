@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Lista de Tarefa</h1>
+
+        <nav>
+            <ul>
+                <li><a href="#">Ínicio</a></li>
+                <li><a href="#">Tarefas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="registro">
+            <h2>Register Task</h2>
+            <form id="taskForm">
+                <input type="text" id="year" placeholder="Year">
+                <select id="month">
+                    <option value="">Month</option>
+                    <option value="january">January</option>
+                    <option value="february">February</option>
+                    <option value="march">March</option>
+                    <option value="april">April</option>
+                    <option value="may">May</option>
+                    <option value="june">June</option>
+                    <option value="july">July</option>
+                    <option value="august">August</option>
+                    <option value="september">September</option>
+                    <option value="october">October</option>
+                    <option value="november">November</option>
+                    <option value="december">December</option>
+                </select>
+                <input type="text" id="day" placeholder="Day">
+                <input type="text" id="type" placeholder="Type">
+                <input type="text" id="description" placeholder="Description">
+                <button type="submit">Save</button>
+            </form>
+        </section>
+
+        <div>
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+
+</html>

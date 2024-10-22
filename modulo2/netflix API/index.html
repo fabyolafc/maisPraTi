@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+    <title>Netflix</title>
+
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="./src/img/logo.png" alt="">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Filmes</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Séries</a></li>
+                </ul>
+            </div>
+            <div class="assine-button">
+                <button><a href="#">Assine Agora</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="src/img/menu/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Filmes</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Séries</a></li>
+            </ul>
+
+            <div class="assine-button">
+                <button><a href="#">Assine</a></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-inicio">
+            <!-- Slider main container -->
+            <div class="swiper swiper-images">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./src/img/slide/la-casa-de-papel.jpg" alt="Série La Casa de Papel">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./src/img/slide/sobrenatural.jpg" alt="Série Sobrenatural">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./src/img/slide/cobra-kai.jpg" alt="Série Cobra Kai">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./src/img/slide/vingadores.png" alt="Filmes dos Vingadores">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="project-img">
+                            <img src="./src/img/slide/umbrella-academy.jpg" alt="Série The Umbrella Academy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+
+        <section class="sobre">
+            <div class="swiper swiper-text">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="sobre-info">
+                            <div class="info">
+                                <h2>La casa de papel</h2>
+                                <p>Um dos maiores sucessos globais da Netflix, "La Casa de Papel" acompanha um grupo de
+                                    criminosos que, liderados pelo Professor, planejam e executam assaltos
+                                    meticulosamente
+                                    calculados ao redor da Espanha. A série combina ação, drama e reviravoltas
+                                    inesperadas,
+                                    mantendo os espectadores na ponta da cadeira em cada episódio.</p>
+                            </div>
+                            <div class="personagens">
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/professor.jpg" alt="Professor">
+                                    <p>Professor</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/raquel.jpg" alt="Raquel">
+                                    <p>Raquel</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/toquio.jpg" alt="Toquio">
+                                    <p>Toquio</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/rio_iTFHBlZ.jpg" alt="Rio">
+                                    <p>Rio</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/denver.jpg" alt="Denver">
+                                    <p>Denver</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/berlim_4AxG6ax.jpg" alt="Berlim">
+                                    <p>Berlim</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sobre-info">
+                            <div class="info">
+                                <h2>Sobrenatural</h2>
+                                <p>Esta longa série cult segue os irmãos Winchester, Sam e Dean, enquanto eles caçam
+                                    criaturas sobrenaturais, incluindo demônios, fantasmas e deuses. "Sobrenatural"
+                                    combina
+                                    horror com momentos de humor e uma forte ligação familiar, sendo uma favorita dos
+                                    fãs de
+                                    terror e fantasia.</p>
+                            </div>
+                            <div class="personagens">
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/sobrenatural/dean.jpg" alt="Dean">
+                                    <p>Dean</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/sobrenatural/sam.jpg" alt="Sam">
+                                    <p>Sam</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/sobrenatural/castiel.jpg" alt="Castiel">
+                                    <p>Castiel</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/sobrenatural/bobby.jpg" alt="Bobby">
+                                    <p>Bobby</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/sobrenatural/jack.jpg" alt="Jack">
+                                    <p>Jack</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/sobrenatural/crowley.jpg" alt="Crowley">
+                                    <p>Crowley</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sobre-info">
+                            <div class="info">
+                                <h2>Cobra Kai</h2>
+                                <p>Uma continuação direta dos filmes "Karatê Kid", "Cobra Kai" explora as vidas de
+                                    Johnny
+                                    Lawrence e Daniel LaRusso décadas após seus dias de glória no tatame. A série
+                                    mistura
+                                    nostalgia com novas histórias, destacando rivalidades antigas, novos alunos e lições
+                                    importantes de vida através do karatê.</p>
+                            </div>
+                            <div class="personagens">
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/professor.jpg" alt="Johnny">
+                                    <p>Johnny</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/raquel.jpg" alt="Daniel">
+                                    <p>Daniel</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/toquio.jpg" alt="Miguel">
+                                    <p>Miguel</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/rio_iTFHBlZ.jpg" alt="Robby">
+                                    <p>Robby</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/denver.jpg" alt="Sam">
+                                    <p>Sam</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/berlim_4AxG6ax.jpg" alt="Tory">
+                                    <p>Tory</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sobre-info">
+                            <div class="info">
+                                <h2>Vingadores</h2>
+                                <p>Os Vingadores são um grupo de super-heróis da Marvel que se uniram para proteger a
+                                    Terra
+                                    de ameaças poderosas. Com personagens icônicos como Homem de Ferro, Capitão América,
+                                    Thor e Hulk, os filmes dos Vingadores são repletos de ação explosiva, efeitos
+                                    visuais
+                                    impressionantes e um enredo épico de salvar o universo.
+                                </p>
+                            </div>
+                            <div class="personagens">
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/professor.jpg" alt="Professor">
+                                    <p>Professor</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/raquel.jpg" alt="Raquel">
+                                    <p>Raquel</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/toquio.jpg" alt="Toquio">
+                                    <p>Toquio</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/rio_iTFHBlZ.jpg" alt="Rio">
+                                    <p>Rio</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/denver.jpg" alt="Denver">
+                                    <p>Denver</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/berlim_4AxG6ax.jpg" alt="Berlim">
+                                    <p>Berlim</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="sobre-info">
+                            <div class="info">
+                                <h2>The Umbrella Academy</h2>
+                                <p>Esta série original da Netflix segue uma família disfuncional de super-heróis que se
+                                    reúnem para resolver o mistério da morte de seu pai adotivo e impedir o apocalipse.
+                                    Com
+                                    personagens únicos e um enredo não convencional, "The Umbrella Academy" é uma
+                                    mistura
+                                    intrigante de drama, humor e ação, com toques de ficção científica.</p>
+                            </div>
+                            <div class="personagens">
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/professor.jpg" alt="Professor">
+                                    <p>Professor</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/raquel.jpg" alt="Raquel">
+                                    <p>Raquel</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/toquio.jpg" alt="Toquio">
+                                    <p>Toquio</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/rio_iTFHBlZ.jpg" alt="Rio">
+                                    <p>Rio</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/denver.jpg" alt="Denver">
+                                    <p>Denver</p>
+                                </div>
+                                <div class="personagens-item">
+                                    <img src="./src/img/personagens/la casa de papal/berlim_4AxG6ax.jpg" alt="Berlim">
+                                    <p>Berlim</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        </section>
+
+        <section class="generos">
+            <h2>Gêneros</h2>
+            <div class="generos-filmes">
+                <div class="generos-item">
+                    <img src="./src/img/generos/acao.jpg" alt="Filme da Mulher Maravilha">
+                    <p>Ação</p>
+                </div>
+
+                <div class="generos-item">
+                    <img src="./src/img/generos/aventura.jpg" alt="Filme Batman vc Superman">
+                    <p>Aventura</p>
+                </div>
+
+                <div class="generos-item">
+                    <img src="./src/img/generos/romance.jpg" alt="Filme 365 dias">
+                    <p>Romance</p>
+                </div>
+
+                <div class="generos-item">
+                    <img src="./src/img/generos/misterio.jpg" alt="Filme do Sherlock">
+                    <p>Mistério</p>
+                </div>
+
+                <div class="generos-item">
+                    <img src="./src/img/generos/suspense.jpg" alt="Filme do John Wick">
+                    <p>Suspense</p>
+                </div>
+
+                <div class="generos-item">
+                    <img src="./src/img/generos/terror.jpg" alt="Filme Pânico">
+                    <p>Terror</p>
+                </div>
+
+                <div class="generos-item">
+                    <img src="./src/img/generos/crime.jpg" alt="Filme Uma Noite de Crime">
+                    <p>Crime</p>
+                </div>
+
+                <div class="generos-item">
+                    <img src="./src/img/generos/comedia.jpg" alt="Filma da Barbie">
+                    <p>Comédia</p>
+                </div>
+
+                <div class="generos-item">
+                    <img src="./src/img/generos/drama.jpg" alt="Filme Umma">
+                    <p>Drama</p>
+                </div>
+
+                <div class="generos-item">
+                    <img src="./src/img/generos/fantasia.jpg" alt="Filme Mentes Sombrias">
+                    <p>Fantasia</p>
+                </div>
+
+                <div class="generos-item">
+                    <img src="./src/img/generos/ficcao.jpg" alt="Filme X-men">
+                    <p>Ficção Cientifica</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_filmes">
+            <h2>Filmes Populares</h2>
+            <div class="center">
+                <div class="carrossel" id="carrossel-filmes">
+                    <div class="carrosselBox">
+                        <!-- Conteúdo dinâmico -->
+                    </div>
+                    <a class="switchLeft sliderButton btnstyle" onclick="sliderScrollLeft('filmes')">
+                        <i class="bi bi-chevron-left"></i>
+                    </a>
+                    <a class="switchRight sliderButton btnstyle" onclick="sliderScrollRight('filmes')">
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_series">
+            <h2>Séries Populares</h2>
+            <div class="center">
+                <div class="carrossel" id="carrossel-series">
+                    <div class="carrosselBox">
+                        <!-- Conteúdo dinâmico -->
+                    </div>
+                    <a class="switchLeft sliderButton btnstyle" onclick="sliderScrollLeft('series')">
+                        <i class="bi bi-chevron-left"></i>
+                    </a>
+                    <a class="switchRight sliderButton btnstyle" onclick="sliderScrollRight('series')">
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./src/js/script.js"></script>
+    <script src="./src/js/menu.js"></script>
+</body>
+
+</html>

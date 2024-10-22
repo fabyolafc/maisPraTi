@@ -1,0 +1,52 @@
+@media screen and (max-width: 1070px) {
+
+    .info_serie {
+        text-align: center;
+    }
+   
+    .info_serie .nome_serie {
+        font-size: 60px;
+    }
+
+    .info_serie .descricao_serie {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    header {
+        position: static;
+    }
+
+    header .content_header {
+        flex-direction: column;
+    }
+
+    header .content_header nav ul {
+        margin-bottom: 20px;
+    }
+
+    .temp_form {
+        flex-direction: column;
+    }
+
+    .temp_form .section_form {
+        width: 100%;
+        
+    }
+
+    .temp_form .section_form form input {
+        width: 100%;
+    }
+
+    .temp_form .section_form button {
+        width: 100%;
+    }
+
+    .temp_form .aside_temporadas {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 50px;
+    }
+    
+}
