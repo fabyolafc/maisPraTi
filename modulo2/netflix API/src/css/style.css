@@ -14,9 +14,9 @@ body {
     width: 2px;
 }
 
-::-webkit-scrollbar-thumb{
-    background-color:#ed1c24;
-    
+::-webkit-scrollbar-thumb {
+    background-color: #ed1c24;
+
 }
 
 .nav-bar {
@@ -103,6 +103,7 @@ main .main-inicio .swiper {
 
 .swiper .swiper-wrapper .swiper-slide .project-img img {
     width: 100%;
+    height: 700px;
     object-fit: cover;
 }
 
@@ -113,8 +114,8 @@ main .main-inicio .swiper {
     left: 0;
     width: 100%;
     height: 100%;
-    background: 
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0) 50%), 
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 20%, rgba(0, 0, 0, 0) 50%),
         linear-gradient(to right, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.3) 80%, rgba(0, 0, 0, 0.4) 100%);
     z-index: 4;
 }
@@ -135,35 +136,47 @@ main .sobre {
 
 main .sobre .sobre-info {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 30px;
 }
 
 main .sobre .sobre-info .info {
-    width: 47%;
+    width: 80%;
+    margin-bottom: 15px;
 }
 
 main .sobre .sobre-info .personagens {
-    width: 47%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 main .sobre .swiper .swiper-wrapper .swiper-slide h2 {
-    font-size: 34px;
-    margin-bottom: 2rem;
-    border-left: 4px solid #ed1c24;
-    padding-left: 10px;
-    display: inline-block;
+    font-size: 32px; /* Tamanho maior para destaque */
+    font-weight: 700; /* Fonte mais grossa para dar impacto */
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
+    text-align: center; /* Centraliza o texto */
+    position: relative;
+    letter-spacing: 2px; /* Espaçamento entre letras para elegância */
+}
+
+main .sobre .swiper .swiper-wrapper .swiper-slide h2::after {
+    content: ""; /* Pseudo-elemento para linha embaixo */
+    display: block;
+    width: 20%; /* Ajuste o comprimento da linha */
+    height: 3px;
+    background-color: #ed1c24; /* Cor da linha */
+    margin: 8px auto 0; /* Centraliza a linha */
 }
 
 main .sobre .swiper .swiper-wrapper .swiper-slide p {
     font-size: 16px;
     line-height: 1.5;
-    text-align: justify;
+    text-align: center;
 }
 
 main .sobre .sobre-info .personagens-item {
@@ -171,12 +184,11 @@ main .sobre .sobre-info .personagens-item {
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    flex-grow: 1;
-   
 }
 
 main .sobre .sobre-info .personagens img {
     width: 150px;
+    height: 100px;
     object-fit: cover;
     border-radius: 10%;
 }
@@ -187,15 +199,12 @@ main .sobre .sobre-info .personagens img {
 
 .generos h2 {
     font-size: 28px;
-    margin-bottom: 2rem;
-    padding-left: 10px; 
-    border-left: 4px solid #ed1c24; 
+    font-weight: 700; /* Fonte mais grossa para dar impacto */
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
-    text-align: left; /* Manter alinhado à esquerda inicialmente */
-    display: inline-block; /* Para a borda ficar com o h2 */
+    text-align: center; /* Centraliza o texto */
     position: relative;
-    left: 50%; /* Centraliza o elemento */
-    transform: translateX(-50%); /* Ajusta para centralizar corretamente */
+    letter-spacing: 2px; /* Espaçamento entre letras para elegância */
 }
 
 .generos-filmes {
@@ -206,18 +215,18 @@ main .sobre .sobre-info .personagens img {
 }
 
 .generos .generos-item {
-    background-color: #0e0c0c;
     border-radius: 3px;
-    padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
     transition: .5s;
+    background-color: #ffffff;
+    
 }
 
 .generos .generos-item:hover {
-    background-color: #242424;
+    box-shadow: 0 0 5px #ffffff;
 }
 
 .generos .generos-item img {
@@ -228,6 +237,8 @@ main .sobre .sobre-info .personagens img {
 
 .generos .generos-item p {
     font-size: 18px;
+    color: #000;
+    font-weight: 600;
 }
 
 .section_filmes {
@@ -238,11 +249,12 @@ main .sobre .sobre-info .personagens img {
 
 .section_filmes h2 {
     font-size: 28px;
-    margin-bottom: 2rem;
-    border-left: 4px solid #ed1c24;
-    padding-left: 10px;
-    display: inline-block;
+    font-weight: 700; /* Fonte mais grossa para dar impacto */
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
+    text-align: center; /* Centraliza o texto */
+    position: relative;
+    letter-spacing: 2px; /* Espaçamento entre letras para elegância */
 }
 
 .center {
@@ -320,11 +332,12 @@ main .sobre .sobre-info .personagens img {
 
 .section_series h2 {
     font-size: 28px;
-    margin-bottom: 2rem;
-    border-left: 4px solid #ed1c24;
-    padding-left: 10px;
-    display: inline-block;
+    font-weight: 700; /* Fonte mais grossa para dar impacto */
+    margin-bottom: 1.5rem;
     text-transform: uppercase;
+    text-align: center; /* Centraliza o texto */
+    position: relative;
+    letter-spacing: 2px; /* Espaçamento entre letras para elegância */
 }
 
 .section_series .center {
@@ -388,4 +401,157 @@ main .sobre .sobre-info .personagens img {
 .section_series .carrosselBox img:hover {
     transform: scale(1.1);
     z-index: 5;
+}
+
+.testemunhos {
+    margin: 100px 40px;
+}
+
+.testemunhos h2 {
+    font-size: 28px;
+    font-weight: 700; /* Fonte mais grossa para dar impacto */
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    text-align: center; /* Centraliza o texto */
+    position: relative;
+    letter-spacing: 2px; /* Espaçamento entre letras para elegância */
+}
+
+.testemunhos .container-testemunhos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.testemunhos .container-testemunhos .testemunhos-item {
+    flex: 1 1 300px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 0 5px #3f3f3f;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.testemunhos .container-testemunhos .testemunhos-item:hover {
+    box-shadow: 0 0 5px #ed1c24;
+}
+
+.testemunhos .container-testemunhos .testemunhos-item img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.testemunhos .container-testemunhos .testemunhos-item p {
+    text-align: center;
+}
+
+.section-formulario h2 {
+    font-size: 28px;
+    font-weight: 700; /* Fonte mais grossa para dar impacto */
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    text-align: center; /* Centraliza o texto */
+    position: relative;
+    letter-spacing: 2px; /* Espaçamento entre letras para elegância */
+}
+
+
+.form-assine {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.form-assine .formulario {
+    margin: 0 40px;
+    padding: 60px 50px;
+    box-shadow: 0 0 5px #3f3f3f;
+    border-radius: 20px;
+}
+
+.form-assine form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.form-assine form h3 {
+    text-transform: uppercase;
+    color: #ed1c24;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+
+.form-assine form input {
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+
+.form-assine .formulario button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #ed1c24;
+    border: 2px solid transparent;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.form-assine .formulario button:hover {
+    background-color: transparent;
+    border: 2px solid #ed1c24;
+}
+
+footer {
+    background-color: #470002;
+    margin-top: 80px;
+}
+
+footer .container-footer {
+    padding: 100px 40px 20px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer .container-footer .btn-social a button {
+    background: none; /* Remove o fundo branco */
+    border: none; /* Remove a borda */
+    color: #ffffff; /* Cor dos ícones */
+    font-size: 1.5em; /* Ajuste do tamanho dos ícones */
+    padding: 0.5em;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Animação para o hover */
+}
+
+.btn-social a button:hover {
+    color: #ed1c24;
+       
+ }
+   
+.footer-bottom {
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+footer .container-footer .btn-social i {
+    font-size: 40px;
+
 }
